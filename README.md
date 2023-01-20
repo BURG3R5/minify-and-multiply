@@ -1,71 +1,42 @@
-# minify-and-multiply README
+# minify-and-multiply
 
-This is the README for your extension "minify-and-multiply". After writing up a brief description, we recommend including the following sections.
+_Minify and Multiply_ is a cookie clicker game unlike any other! This one can be installed as an extension into the popular IDE **Visual Studio Code** which means you can play it while developing new and exciting software!
 
-## Features
+> Debugging session not going well? **Take a break and manage a business!**
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Story
 
-For example if there is an image subfolder under your extension project workspace:
+Your factory makes a product. But due to its size, you can only sell a limited number of products per shipment. Well how about you trim its size a little? Awesome, now you can sell more products!
+
+But wait, soon you'll run into the minimum scientific possible size! No worries: why don't you do some science stuff to it? Throw a few testtubes around and _Voila!_ science has made the impossible possible again!
+
+Ugh, I'm tired after all this machining and selling and sciencing, aren't you? Let's hire salesmen, engineers and scientists to do your job for you! They'll help you take this product to `Infinity` and beyond\*!
+
+\*planned feature
+
+## Screenshots
 
 \!\[feature X\]\(images/feature-x.png\)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Controls
 
-## Requirements
+In your Command Palette, use the command `Play Minify and Multiply` to start the game.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Each possible action has a number associated with it, displayed in its box. Press the corresponding numeric key to do that action
 
-## Extension Settings
+| Action           | Number | Description                                                   |
+| ---------------- | ------ | ------------------------------------------------------------- |
+| Sell             | 1      | Sells as many products as can fit within a 10 m³ container    |
+| Trim             | 2      | Reduces the product size by 5% towards the scientific minimum |
+| Research         | 3      | Reduces the scientific minimum size by 5%                     |
+| Hire [Salesman]  | 4      | Automatatically performs the Sell action\*                    |
+| Hire [Engineer]  | 5      | Automatatically performs the Trim action\*                    |
+| Hire [Scientist] | 6      | Automatatically performs the Research action\*                |
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-- `myExtension.enable`: Enable/disable this extension.
-- `myExtension.thing`: Set to `blah` to do something.
+\*More employees means faster automation
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- Switching away from the game window freezes input. This will be fixed before the first stable release.
 
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## [Release Notes](https://github.com/BURG3R5/minify-and-multiply/releases)
