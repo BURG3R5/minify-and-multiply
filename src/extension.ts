@@ -1,26 +1,27 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
+import renderScreen from "./game/output";
+import loop from "./game/loop";
+import initVariables from "./game/init";
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
+  console.log('Congratulations, your extension "vsc-game" is now active!');
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "minify-and-multiply" is now active!');
+  initVariables();
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('minify-and-multiply.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from minify-and-multiply!');
-	});
+  let disposable = vscode.commands.registerCommand(
+    "vsc-game.helloWorld",
+    () => {
+      vscode.workspace.openTextDocument().then((newDocument) => {
+        vscode.window.showTextDocument(newDocument).then((newTextEditor) => {
+          var editor = newTextEditor;
+          editor.edit((ed) => renderScreen(ed)).then(() => loop(editor));
+        });
+      });
+      vscode.window.showInformationMessage("Hello World from vsc-game!");
+    }
+  );
 
-	context.subscriptions.push(disposable);
+  context.subscriptions.push(disposable);
 }
 
-// This method is called when your extension is deactivated
 export function deactivate() {}
