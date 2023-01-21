@@ -18,19 +18,19 @@ Ugh, I'm tired after all this machining and selling and sciencing, aren't you? L
 
 ### Game screen
 
-<img src="images/initial-screen.png" width="464" height="404">
+<img src="images/initial-screen.png" width="478" height="422">
 
 ### Minify your product
 
-<img src="images/minify-your-product.png" width="464" height="404">
+<img src="images/minify-your-product.png" width="478" height="422">
 
 ### Hire employees to automate tasks
 
-<img src="images/hire-employees-to-automate-tasks.png" width="464" height="404">
+<img src="images/hire-employees-to-automate-tasks.png" width="478" height="422">
 
 ### See how low you can go
 
-<img src="images/see-how-low-you-can-go.png" width="464" height="404">
+<img src="images/see-how-low-you-can-go.png" width="478" height="422">
 
 ## Controls
 
