@@ -16,7 +16,13 @@ Ugh, I'm tired after all this machining and selling and sciencing, aren't you? L
 
 ## Screenshots
 
-\!\[feature X\]\(images/feature-x.png\)
+![Initial Screen](images/initial-screen.png | width=100)
+
+![Minify your product](images/minify-your-product.png | width=100)
+
+![Hire employees to automate tasks](images/hire-employees-to-automate-tasks.png | width=100)
+
+![See how low you can go](images/see-how-low-you-can-go.png | width=100)
 
 ## Controls
 
