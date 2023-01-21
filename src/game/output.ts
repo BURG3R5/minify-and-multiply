@@ -104,7 +104,7 @@ export default function renderScreen(ed: vscode.TextEditorEdit) {
   var lines = updateStrings();
   var grid = updateGrid(lines);
   var loader = updateLoader();
-  ed.insert(new vscode.Position(0, 0), globalThis.titleLine);
+  ed.insert(new vscode.Position(0, 0), globalThis.title);
   ed.insert(new vscode.Position(0, 0), loader);
   ed.insert(new vscode.Position(0, 0), grid);
 }
