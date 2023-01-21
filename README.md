@@ -17,16 +17,20 @@ Ugh, I'm tired after all this machining and selling and sciencing, aren't you? L
 ## Screenshots
 
 ### Game screen
+
 <img src="images/initial-screen.png" width="464" height="404">
 
 ### Minify your product
+
 <img src="images/minify-your-product.png" width="464" height="404">
 
 ### Hire employees to automate tasks
+
 <img src="images/hire-employees-to-automate-tasks.png" width="464" height="404">
 
 ### See how low you can go
-<img src="images/hire-employees-to-automate-tasks.png" width="464" height="404">
+
+<img src="images/see-how-low-you-can-go.png" width="464" height="404">
 
 ## Controls
 
