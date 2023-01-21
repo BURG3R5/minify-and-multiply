@@ -12,9 +12,9 @@ export default function initVariables() {
   globalThis.TRIM_PERCENT = 0.05;
   globalThis.RESEARCH_MULTIPLIER = 0.95;
 
-  globalThis.SALESMAN_COST = 25;
-  globalThis.ENGINEER_COST = 100;
-  globalThis.RESEARCHER_COST = 1000;
+  globalThis.SALESMAN_COST = 20;
+  globalThis.ENGINEER_COST = 200;
+  globalThis.RESEARCHER_COST = 2000;
   globalThis.TRIM_COST = 10;
   globalThis.RESEARCH_COST = 100;
 
@@ -37,12 +37,13 @@ export default function initVariables() {
 
   //Title ASCII art from https://fsymbols.com/text-art/
   globalThis.title =
-    "     ███╗   ███╗ ██╗ ███╗  ██╗ ██╗ ███████╗ ██╗ ██╗   ██╗     █████╗  ███╗  ██╗ ██████╗\n" +
-    "     ████╗ ████║ ██║ ████╗ ██║ ██║ ██╔════╝ ██║ ╚██╗ ██╔╝    ██╔══██╗ ████╗ ██║ ██╔══██╗\n" +
-    "     ██╔████╔██║ ██║ ██╔██╗██║ ██║ █████╗   ██║  ╚████╔╝     ███████║ ██╔██╗██║ ██║  ██║\n" +
-    "     ██║╚██╔╝██║ ██║ ██║╚████║ ██║ ██╔══╝   ██║   ╚██╔╝      ██╔══██║ ██║╚████║ ██║  ██║\n" +
-    "     ██║ ╚═╝ ██║ ██║ ██║ ╚███║ ██║ ██║      ██║    ██║       ██║  ██║ ██║ ╚███║ ██████╔╝\n" +
-    "     ╚═╝     ╚═╝ ╚═╝ ╚═╝  ╚══╝ ╚═╝ ╚═╝      ╚═╝    ╚═╝       ╚═╝  ╚═╝ ╚═╝  ╚══╝ ╚═════╝\n" +
+    "\n" +
+    "     ███╗   ███╗ ██╗ ███╗  ██╗ ██╗ ███████╗ ██╗   ██╗     █████╗  ███╗  ██╗ ██████╗\n" +
+    "     ████╗ ████║ ██║ ████╗ ██║ ██║ ██╔════╝ ╚██╗ ██╔╝    ██╔══██╗ ████╗ ██║ ██╔══██╗\n" +
+    "     ██╔████╔██║ ██║ ██╔██╗██║ ██║ █████╗    ╚████╔╝     ███████║ ██╔██╗██║ ██║  ██║\n" +
+    "     ██║╚██╔╝██║ ██║ ██║╚████║ ██║ ██╔══╝     ╚██╔╝      ██╔══██║ ██║╚████║ ██║  ██║\n" +
+    "     ██║ ╚═╝ ██║ ██║ ██║ ╚███║ ██║ ██║         ██║       ██║  ██║ ██║ ╚███║ ██████╔╝\n" +
+    "     ╚═╝     ╚═╝ ╚═╝ ╚═╝  ╚══╝ ╚═╝ ╚═╝         ╚═╝       ╚═╝  ╚═╝ ╚═╝  ╚══╝ ╚═════╝\n" +
     "\n" +
     "             ███╗   ███╗ ██╗   ██╗ ██╗   ████████╗ ██╗ ██████╗  ██╗   ██╗   ██╗\n" +
     "             ████╗ ████║ ██║   ██║ ██║   ╚══██╔══╝ ██║ ██╔══██╗ ██║   ╚██╗ ██╔╝\n" +
@@ -51,5 +52,6 @@ export default function initVariables() {
     "             ██║ ╚═╝ ██║ ╚██████╔╝ ███████╗ ██║    ██║ ██║      ███████╗ ██║\n" +
     "             ╚═╝     ╚═╝  ╚═════╝  ╚══════╝ ╚═╝    ╚═╝ ╚═╝      ╚══════╝ ╚═╝\n";
   globalThis.instructionLine =
-    "Press '1' to sell, '2' to trim, '3' to research\n";
+    "Press '1' to sell, '2' to trim, '3' to research\n" +
+    "Press '4', '5' or '6' to hire salesmen, engineers or scientists respectively\n";
 }
