@@ -1,8 +1,7 @@
 import Actions from "./actions";
 
 function sell() {
-  const numbersSold: number =
-    globalThis.TRUCK_VOLUME / Math.pow(globalThis.size, 3);
+  const numbersSold: number = globalThis.TRUCK_VOLUME / globalThis.size;
   globalThis.money += numbersSold * globalThis.UNIT_COST;
   console.log("Sold!");
 }
