@@ -1,5 +1,5 @@
 import * as vscode from "vscode";
-var scino = require("scino");
+import scientific from "../utils/scino";
 
 function updateLoader(): string {
   var scalingFactor =
@@ -24,15 +24,14 @@ function updateStrings(): {
     "|  Bank                        " +
     "│\n" +
     "│  Revenue: " +
-    scino(
+    scientific(
       (globalThis.UNIT_COST * globalThis.TRUCK_VOLUME) /
-        Math.pow(globalThis.size, 3),
-      6
+        Math.pow(globalThis.size, 3)
     ).padEnd(19, " ") +
     "│  Cost: $" +
-    scino(globalThis.SALESMAN_COST, 6).padEnd(21, " ") +
+    globalThis.SALESMAN_COST.toString().padEnd(21, " ") +
     "|  $" +
-    scino(globalThis.money, 6).padEnd(27, " ") +
+    scientific(globalThis.money).padEnd(27, " ") +
     "│\n";
   var trimLine =
     "│  2. Trim                     " +
@@ -41,11 +40,11 @@ function updateStrings(): {
     "│  Size                        " +
     "│\n" +
     "│  Cost: $" +
-    scino(globalThis.TRIM_COST).padEnd(21, " ") +
+    globalThis.TRIM_COST.toString().padEnd(21, " ") +
     "│  Cost: $" +
-    scino(globalThis.ENGINEER_COST, 6).padEnd(21, " ") +
+    globalThis.ENGINEER_COST.toString().padEnd(21, " ") +
     "│  " +
-    scino(globalThis.size, 6).padEnd(28, " ") +
+    scientific(globalThis.size).padEnd(28, " ") +
     "│\n";
   var researchLine =
     "│  3. Research                 " +
@@ -54,11 +53,11 @@ function updateStrings(): {
     "│  Minimum Size                " +
     "│\n" +
     "│  Cost: $" +
-    scino(globalThis.RESEARCH_COST).padEnd(21, " ") +
+    globalThis.RESEARCH_COST.toString().padEnd(21, " ") +
     "│  Cost: $" +
-    scino(globalThis.RESEARCHER_COST, 6).padEnd(21, " ") +
+    globalThis.RESEARCHER_COST.toString().padEnd(21, " ") +
     "│  " +
-    scino(globalThis.minimumSize, 6).padEnd(28, " ") +
+    scientific(globalThis.minimumSize).padEnd(28, " ") +
     "│\n";
   return { sellLine, trimLine, researchLine };
 }
