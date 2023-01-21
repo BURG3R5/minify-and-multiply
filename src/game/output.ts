@@ -23,11 +23,12 @@ function updateStrings(): {
     (globalThis.numberSalesmen.toString() + "]").padEnd(15, " ") +
     "|  Bank                        " +
     "│\n" +
-    "│  Qty: " +
-    scino(globalThis.TRUCK_VOLUME / Math.pow(globalThis.size, 3), 6).padEnd(
-      23,
-      " "
-    ) +
+    "│  Revenue: " +
+    scino(
+      (globalThis.UNIT_COST * globalThis.TRUCK_VOLUME) /
+        Math.pow(globalThis.size, 3),
+      6
+    ).padEnd(19, " ") +
     "│  Cost: $" +
     scino(globalThis.SALESMAN_COST, 6).padEnd(21, " ") +
     "|  $" +
