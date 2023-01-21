@@ -22,7 +22,7 @@ var aboveLine: string;
 var dashedLine: string;
 var belowLine: string;
 
-var titleLine: string;
+var title: string;
 var instructionLine: string;
 
 var sellRenderLine: string;
