@@ -49,6 +49,8 @@ Each possible action has a number associated with it, displayed in its box. Pres
 
 \*More employees means faster automation
 
+## [Installation](https://github.com/BURG3R5/minify-and-multiply/wiki/Installation)
+
 ## Known Issues
 
 - Switching away from the game window freezes input. This will be fixed before the first stable release.
