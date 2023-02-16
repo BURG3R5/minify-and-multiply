@@ -36,7 +36,9 @@ function updateStrings(): {
     "│                              |                              |                              " +
     "│\n" +
     "│                              " +
-    "│  "+loader(globalThis.sellTimer, globalThis.sellMaxTime) + "  " +
+    "│  " +
+    loader(globalThis.sellTimer, globalThis.sellMaxTime) +
+    "  " +
     "│                              " +
     "│\n";
   var trimLine =
@@ -55,7 +57,9 @@ function updateStrings(): {
     "│                              |                              |                              " +
     "│\n" +
     "│                              " +
-    "│  " + loader(globalThis.trimTimer, globalThis.trimMaxTime) + "  " +
+    "│  " +
+    loader(globalThis.trimTimer, globalThis.trimMaxTime) +
+    "  " +
     "│                              " +
     "│\n";
   var researchLine =
@@ -74,7 +78,9 @@ function updateStrings(): {
     "│                              |                              |                              " +
     "|\n" +
     "│                              " +
-    "│  " + loader(globalThis.researchTimer, globalThis.researchMaxTime) + "  " +
+    "│  " +
+    loader(globalThis.researchTimer, globalThis.researchMaxTime) +
+    "  " +
     "│                              " +
     "│\n";
   return { sellLine, trimLine, researchLine };
