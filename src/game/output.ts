@@ -1,5 +1,6 @@
 import * as vscode from "vscode";
 import scientific from "../utils/scino";
+import loader from "../utils/loaders";
 
 function updateLoader(): string {
   var scalingFactor =
@@ -31,6 +32,14 @@ function updateStrings(): {
     globalThis.SALESMAN_COST.toString().padEnd(21, " ") +
     "|  $" +
     scientific(globalThis.money).padEnd(27, " ") +
+    "│\n" +
+    "│                              |                              |                              " +
+    "│\n" +
+    "│                              " +
+    "│  " +
+    loader(globalThis.sellTimer, globalThis.sellMaxTime) +
+    "  " +
+    "│                              " +
     "│\n";
   var trimLine =
     "│  2. Trim                     " +
@@ -44,6 +53,14 @@ function updateStrings(): {
     globalThis.ENGINEER_COST.toString().padEnd(21, " ") +
     "│  " +
     scientific(globalThis.size).padEnd(28, " ") +
+    "│\n" +
+    "│                              |                              |                              " +
+    "│\n" +
+    "│                              " +
+    "│  " +
+    loader(globalThis.trimTimer, globalThis.trimMaxTime) +
+    "  " +
+    "│                              " +
     "│\n";
   var researchLine =
     "│  3. Research                 " +
@@ -57,6 +74,14 @@ function updateStrings(): {
     globalThis.RESEARCHER_COST.toString().padEnd(21, " ") +
     "│  " +
     scientific(globalThis.minimumSize).padEnd(28, " ") +
+    "│\n" +
+    "│                              |                              |                              " +
+    "|\n" +
+    "│                              " +
+    "│  " +
+    loader(globalThis.researchTimer, globalThis.researchMaxTime) +
+    "  " +
+    "│                              " +
     "│\n";
   return { sellLine, trimLine, researchLine };
 }
